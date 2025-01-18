@@ -1,0 +1,12 @@
+{
+  "short_name": "Word Study Help",
+  "name": "Word Study Help",
+  "description": "Search pronunciation, description and uses of foreign language words",
+  "scope": "/",
+  "start_url": "/",
+  "background_color": "#0e6eb8",
+  "theme_color": "#0e6eb8",
+  "display": "standalone",
+  "shortcuts": [],
+  "icons": []
+}

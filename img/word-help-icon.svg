@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg 
+   xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" 
+   version="1.1"
+   fill="#3e3e3e"
+   stroke="#3e3e3e"
+   viewBox="0 0 32 32"
+   width="512px"
+   height="512px">
+ <g class="layer">
+   <path d="m2.66,5.63l3.5,0l0,0l5.25,0l12.25,0l0,4.42l0,0l0,1.89l0,1.26l-12.25,0l-8.71,3.71l3.47,-3.71l-3.5,0l0,-1.26l0,-1.89l0,0z" fill="#ffffff" id="svg_4" opacity="0.9" stroke="#000000"/>
+   <path d="m30.27,15.46l-2.06,0l0,0l-3.08,0l-7.2,0l0,4.42l0,0l0,1.89l0,1.26l7.2,0l5.12,3.71l-2.04,-3.71l2.06,0l0,-1.26l0,-1.89l0,0z" fill="#ffffff" id="svg_5" opacity="0.9" stroke="#000000"/>
+   <text fill="#000000" font-family="Serif" font-size="4.63" font-weight="bold" id="svg_7" opacity="0.9" stroke="#000000" stroke-width="0" text-anchor="middle" x="23.54" xml:space="preserve" y="20.7">?</text>
+   <text fill="#000000" font-family="Serif" font-size="4.63" font-weight="bold" id="svg_8" opacity="0.9" stroke="#000000" stroke-width="0" text-anchor="middle" x="13.28" xml:space="preserve" y="11.04">&amp;%@*!#</text>
+ </g>
+</svg>
