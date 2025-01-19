@@ -13,7 +13,7 @@ let openTabs = { };
 function createLink(href, text, target = null) {
   let a = Object.assign(document.createElement("a"), { 
     href: href, 
-    textContent: text 
+    textContent: capitalize(text) 
   });
   if (target) {
     a.target = target;
@@ -35,6 +35,13 @@ function createLink(href, text, target = null) {
   return a;
 }
 
+function capitalize(str) {
+  if (typeof str !== 'string' || str.length === 0) {
+    return '';
+  }
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 function searchWord(e) {
   if (e.which !== 13) { return ; }
 
@@ -53,11 +60,12 @@ function searchWord(e) {
   let pronunciation = document.getElementById("pronunciation");
   let uses = document.getElementById("uses");
   let images = document.getElementById("images");
+  let wikipedia = document.getElementById("wikipedia");
 
   // https://translate.google.com/?op=translate&hl=en%20&sl=it&tl=en&text=prigo
   let googleTranslateLink = "https://translate.google.com?op=translate&hl=" + dl + " &sl=" + sl + "&tl=" + dl + "&text=" + word;
   googleTranslate.innerHTML = "";
-  googleTranslate.appendChild(createLink(googleTranslateLink, destinationLanguage + " translation of '" + word + "'", "Translation"));	
+  googleTranslate.appendChild(createLink(googleTranslateLink, destinationLanguage + " translation", "Translation"));	
   let dictionaryLink = "https://" + sl + ".thefreedictionary.com/" + word;
   dictionary.innerHTML = "";
   dictionary.appendChild(createLink(dictionaryLink, "dictionary", "Dictionary"));
@@ -70,5 +78,8 @@ function searchWord(e) {
   let imagesLink = "https://www.google.com/search?hl=" + sl + "&sclient=img&udm=2&q=" + word;
   images.innerHTML = "";
   images.appendChild(createLink(imagesLink, "images", "Images"));
+  let wikiLink = "https://" + sl + ".wikipedia.org/wiki/" + word;
+  wikipedia.innerHTML = "";
+  wikipedia.appendChild(createLink(wikiLink, "wikipedia", "Wikipedia"));
   wordBox.value = "";
 }
